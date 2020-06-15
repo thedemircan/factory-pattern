@@ -17,7 +17,7 @@ public class CalculateController {
     private final CalculateHandlerFactory calculateHandlerFactory;
 
     @GetMapping
-    public double calculate(@RequestParam Double value, @RequestParam CalculateType calculateType) {
+    public double calculate(@RequestParam double value, @RequestParam CalculateType calculateType) {
         CalculateService calculateService = calculateHandlerFactory.getCalculateType(calculateType);
         return calculateService.calculate(value);
     }

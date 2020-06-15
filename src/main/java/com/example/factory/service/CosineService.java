@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 public class CosineService implements CalculateService {
 
     @Override
-    public double calculate(Double value) {
+    public double calculate(double value) {
         return Math.cos(value);
     }
 }

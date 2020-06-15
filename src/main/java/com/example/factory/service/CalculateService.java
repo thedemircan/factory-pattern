@@ -2,5 +2,5 @@ package com.example.factory.service;
 
 public interface CalculateService {
 
-    double calculate(Double value);
+    double calculate(double value);
 }
